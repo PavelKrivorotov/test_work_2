@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'menu/index.css' %}">
+
+<h2>Menu title: {{ menu_name }}</h2>
+
+<ul>
+    {% for item, depth in menu %}
+        <li>
+            <a
+            target="_blank"
+            href="{% url 'menu-default' %}?menu={{ menu_name }}&item={{ item.id }}"
+            class="p-{{depth}} {% if item.id == menu_item %} active-url {% endif %}"
+            >
+                ID: {{ item.id }}, <b>Title: {{ item.title }}</b>, Depth: {{ depth }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

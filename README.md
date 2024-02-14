@@ -4,3 +4,4 @@ How to run:
 
 Urls:
 1) App (http://127.0.0.1:8000/menu/)
+2) Admin (http://127.0.0.1:8000/admin/, user=admin, password=admin)

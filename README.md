@@ -2,7 +2,7 @@ How to run (1 way):
 1) clone repository
 2) cd to clone repository
 3) create environment: `virtualenv venv`
-4) install packages: `pip install -r requirements.txtx`
+4) install packages: `pip install -r requirements.txt`
 5) run: `python manage.py runserver`
 
 How to run (2 way):

@@ -1,0 +1,9 @@
+version: 'v2.17.2'
+
+services:
+  app:
+    build: .
+    container_name: backend
+    ports:
+      - 8000:8000
+    command: python main/manage.py runserver 0.0.0.0:8000
